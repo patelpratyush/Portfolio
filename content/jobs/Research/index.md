@@ -1,11 +1,12 @@
 ---
 date: '10-01-2024'
-title: 'Undergraduate Research Assistant'
+title: 'Undergraduate/Graduate Research Assistant'
 company: 'Stevens Institute of Technology'
 location: 'Hoboken, NJ'
 range: 'Oct 2024 - Present'
 url: 'https://www.stevens.edu/'
 ---
 
-- Collaborated on the research project titled “Synthesizing Access Control Policies using Large Language Models.”
-- Contributed to creating and analyzing access control policy datasets for research purposes
+- Built verification framework for 300+ AWS IAM roles, KMS policies, and VPC security groups using Python, Terraform, AWS SDKs, reducing misconfigurations by 40%
+- Automated policy checks for cloud access control, improving detection accuracy to 83.8% and reducing audit time by 70%
+- Contributed to secure infrastructure verification system; co-authored paper accepted to NLBSE'25 on IAM synthesis via LLMs

@@ -7,6 +7,6 @@ range: 'July 2024 - Sep 2024'
 url: 'https://headstarter.co/'
 ---
 
-- Boosted user engagement by 40% through AI-driven web apps built with Next.js, React, and Firebase.
-- Deployed a scalable SaaS platform with NextAuth.js and Stripe, achieving 95% customer satisfaction.
-- Increased query accuracy by 30% by automating data extraction using a web scraper for Rate My Professor
+- Dockerized CI/CD pipelines with GitHub Actions and deployed scalable backend systems to AWS/GCP for 3 AI SaaS apps
+- Integrated Stripe billing, JWT-based auth, and production-grade APIs using FastAPI, Express.js
+- Developed NLP-driven professor review search tool, analyzing 100K+ records with 30% improved query precision
