@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Material-UI', 'Machine Learning'];
+  const skills = ['Python', 'JavaScript/TypeScript', 'React', 'Next.js', 'FastAPI', 'Flask', 'Docker', 'AWS', 'Machine Learning', 'Go'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,26 +135,31 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Pratyush Patel, a software engineering enthusiast with a keen interest in machine learning and data analysis.
-              Hello! My name is Pratyush and I'm a passionate Computer Science student at{' '}
-              <a className="email-link" href="https://www.stevens.edu/"> Stevens Institute of Technology </a>.
-              My journey in tech started in high school when I took an AP Computer Science course, sparking a fascination with building 
-              interactive applications and solving complex problems through code.
+              Hello! I'm Pratyush Patel, a software engineer and researcher currently pursuing both my Bachelor's and Master's degrees
+              in Computer Science at{' '}
+              <a className="email-link" href="https://www.stevens.edu/">Stevens Institute of Technology</a>{' '}
+              (graduating May 2025 and May 2026). My passion lies at the intersection of software engineering, machine learning,
+              and cloud security—building scalable systems that solve real-world problems.
             </p>
 
             <p>
-              Recently, I've had the opportunity to work as a Software Engineering Fellow at{' '}
-              <a className="email-link" href="https://headstarter.co/">Headstarter AI</a>, where I developed AI-powered web
-              applications and scalable SaaS platforms using Next.js, React, Firebase, and Stripe.
-              From developing AI-powered recommendation tools to implementing analytics, I love building solutions that empower users 
-              and enhance experiences. Skilled in tools like Firebase, GCP, and machine learning libraries, I'm always eager to explore innovative ways 
-              to solve real-world challenges at the intersection of software engineering, machine learning, and data.
+              Currently, I'm a Research Assistant at Stevens working on cloud security verification, building frameworks
+              for AWS IAM roles, KMS policies, and VPC security groups using Python, Terraform, and AWS SDKs. I co-authored
+              a paper on IAM synthesis via LLMs accepted to{' '}
+              <a className="email-link" href="https://conf.researchr.org/home/nlbse-2025">NLBSE'25</a>.
+              Previously, I worked as a Software Engineering Fellow at{' '}
+              <a className="email-link" href="https://headstarter.co/">Headstarter AI</a>, where I built and deployed
+              AI SaaS applications using Docker, CI/CD pipelines, and cloud platforms.
             </p>
 
             <p>
-              In addition to my professional experience, I've led personal projects like an AI-powered
-              flashcard app and a professor recommendation tool using advanced technologies such as
-              OpenAI, Pinecone, and Google Generative AI.
+              I've built several full-stack projects including{' '}
+              <a className="email-link" href="https://github.com/patelpratyush/ResumeSharp">ResumeSharp</a>, an AI-powered
+              resume optimization SaaS with Stripe subscriptions;{' '}
+              <a className="email-link" href="https://github.com/patelpratyush/F1-Insight-Hub">F1 Insight Hub</a>, a real-time
+              analytics dashboard with ML predictions; and an{' '}
+              <a className="email-link" href="https://github.com/patelpratyush/AI-Powered-Portfolio-Optimizer">AI Portfolio Optimizer</a>{' '}
+              processing 10M+ stock datapoints daily with 78% forecast accuracy.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
