@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #08090c;
+  --bg-raised: #0c0e12;
+  --line: rgba(255, 255, 255, 0.08);
+  --ink: #eef1f5;
+  --ink-dim: #8b93a3;
+  --accent: #e8a03c;
+  --accent-ink: #1a1204;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.font-mono-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
