@@ -1,9 +1,9 @@
 import { GridField } from "./grid-field";
 
 const stats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Production ML systems shipped", value: "6" },
-  { label: "AWS roles verified", value: "300+" },
+  { label: "Years of experience", value: "2+" },
+  { label: "AWS misconfigs reduced", value: "40%" },
+  { label: "IAM roles verified", value: "300+" },
 ];
 
 export function About() {

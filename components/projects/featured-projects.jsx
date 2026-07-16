@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { featuredProjects } from "@/data/projects";
+import { GridField } from "@/components/grid-field";
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +10,31 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
+function ProjectCover({ project }) {
+  const [errored, setErrored] = useState(false);
+
+  if (project.cover && !errored) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element -- animated GIF, must bypass Next's image optimizer
+      <img
+        src={project.cover}
+        alt={project.title}
+        onError={() => setErrored(true)}
+        className="aspect-video h-full w-full object-cover"
+      />
+    );
+  }
+
+  return (
+    <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden bg-[var(--bg)]">
+      <GridField />
+      <span className="font-serif-display relative text-5xl italic text-[var(--ink-dim)] transition-colors group-hover:text-[var(--accent)]">
+        {project.title.slice(0, 1)}
+      </span>
+    </div>
+  );
+}
 
 export function FeaturedProjects() {
   const cardRefs = useRef([]);
@@ -67,17 +92,10 @@ export function FeaturedProjects() {
                   href={project.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="relative block overflow-hidden rounded border border-[var(--line)] bg-[var(--bg-raised)]"
+                  className="group relative block overflow-hidden rounded border border-[var(--line)] bg-[var(--bg-raised)]"
                 >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={600}
-                    height={300}
-                    className="aspect-video h-full w-full object-cover"
-                    unoptimized
-                  />
-                  <div className="absolute bottom-0 w-full border-t border-[var(--line)] bg-[var(--bg)]/70 p-4 backdrop-blur">
+                  <ProjectCover project={project} />
+                  <div className="relative w-full border-t border-[var(--line)] bg-[var(--bg)] p-4">
                     <h3 className="text-sm font-semibold text-[var(--ink)]">
                       {project.title}
                     </h3>
