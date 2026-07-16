@@ -2,6 +2,7 @@ import { Instrument_Serif, JetBrains_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { Preloader } from "@/components/preloader";
 
 const serif = Instrument_Serif({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${serif.variable} ${mono.variable} ${sans.variable}`}>
       <body>
+        <Preloader />
         <Nav />
         {children}
         <Footer />
