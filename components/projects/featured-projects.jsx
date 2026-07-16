@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { featuredProjects } from "@/data/projects";
 import { GridField } from "@/components/grid-field";
 import {
@@ -41,6 +42,7 @@ export function FeaturedProjects() {
   const [carouselApi, setCarouselApi] = useState(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const plugins = useMemo(() => [WheelGesturesPlugin()], []);
 
   useEffect(() => {
     let cancelled = false;
@@ -83,7 +85,12 @@ export function FeaturedProjects() {
       </p>
 
       <div className="mt-10">
-        <Carousel setApi={setCarouselApi} className="w-full">
+        <Carousel
+          setApi={setCarouselApi}
+          opts={{ loop: true }}
+          plugins={plugins}
+          className="w-full"
+        >
           <CarouselContent>
             {featuredProjects.map((project, i) => (
               <CarouselItem key={project.slug} className="md:basis-1/2">
