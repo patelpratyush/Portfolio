@@ -12,9 +12,9 @@ export function Hero() {
           I turn ambiguous problems into working software.
         </h1>
         <p className="mt-5 max-w-[44ch] text-[15px] leading-relaxed text-[var(--ink-dim)]">
-          Full-stack engineer focused on ML-backed products — from research
-          prototypes at Headstarter to production APIs and infrastructure
-          verification systems.
+          Full-stack engineer working across data pipelines, cloud
+          infrastructure, and AI SaaS products — currently at Asembia,
+          previously Stevens and Headstarter.
         </p>
         <div className="mt-8 flex items-center gap-5">
           <a

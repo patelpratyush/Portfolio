@@ -1,10 +1,18 @@
 export const featuredProjects = [
   {
+    slug: "resumesharp",
+    title: "ResumeSharp",
+    description:
+      "Full-stack AI SaaS with a TypeScript/Next.js frontend and FastAPI backend, delivering real-time resume analysis via GraphQL and OpenAI APIs. Tiered subscription billing, JWT authentication, and role-based access control using Stripe and PostgreSQL-backed user management.",
+    tech: ["React", "Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Stripe", "OpenAI"],
+    href: "https://github.com/patelpratyush/ResumeSharp",
+  },
+  {
     slug: "f1-insight-hub",
     title: "F1 Insight Hub",
     description:
-      "Real-time F1 analytics dashboard ingesting 50+ live feeds, sub-200ms latency, 99.9% uptime. ML ensembles (XGBoost, Random Forest, Neural Nets) with 0.359 MAE across 718 races. Live weather integration, Monte Carlo strategy simulation, interactive track maps.",
-    tech: ["React", "TypeScript", "Python", "FastAPI", "XGBoost", "FastF1"],
+      "Real-time analytics platform ingesting 50+ live data feeds with sub-200ms API response times and 99.9% uptime via Docker-containerized microservices. XGBoost ensemble models trained and deployed across 718 races to predict race outcomes, surfacing live strategy insights through a TypeScript dashboard.",
+    tech: ["React", "TypeScript", "FastAPI", "Python", "XGBoost", "Docker"],
     href: "https://github.com/patelpratyush/F1-Insight-Hub",
   },
   {
@@ -14,14 +22,6 @@ export const featuredProjects = [
       "Investment platform processing 10M+ stock datapoints daily, forecasting asset returns with 78% accuracy. 12+ predictive models (XGBoost, LSTM, Prophet) across 25+ technical indicators, <100ms latency, scaled to 1K+ concurrent users.",
     tech: ["React", "TypeScript", "Python", "Flask", "LSTM", "Prophet"],
     href: "https://github.com/patelpratyush/AI-Powered-Portfolio-Optimizer",
-  },
-  {
-    slug: "resumesharp",
-    title: "ResumeSharp",
-    description:
-      "AI-powered resume optimization SaaS generating ATS-friendly rewrites in real time. Stripe subscriptions with Supabase auth and RBAC. PDF/DOCX export with live previews, intelligent job-description matching.",
-    tech: ["Next.js", "TypeScript", "FastAPI", "Supabase", "Stripe", "OpenAI"],
-    href: "https://github.com/patelpratyush/ResumeSharp",
   },
   {
     slug: "professai",

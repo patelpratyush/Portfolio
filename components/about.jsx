@@ -14,9 +14,9 @@ export function About() {
         <span className="font-mono-label text-xs text-[var(--accent)]">About</span>
         <p className="mt-4 max-w-[62ch] text-[15px] leading-relaxed text-[var(--ink-dim)]">
           I&apos;m a software engineer working across backend systems, applied ML,
-          and cloud infrastructure. Most recently I built AI SaaS backends at
-          Headstarter and a verification framework for AWS IAM policies at
-          Stevens Institute of Technology.
+          and cloud infrastructure. Currently building PHI validation and data
+          pipeline tooling at Asembia, after building an AWS IAM verification
+          framework at Stevens and shipping AI SaaS backends at Headstarter.
         </p>
         <dl className="mt-10 grid grid-cols-3 gap-6 border-t border-[var(--line)] pt-6">
           {stats.map((stat) => (
