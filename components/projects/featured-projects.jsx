@@ -107,8 +107,8 @@ export function FeaturedProjects() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="border-[var(--line)] bg-[var(--bg-raised)] text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--bg-raised)] hover:text-[var(--accent)]" />
+          <CarouselNext className="border-[var(--line)] bg-[var(--bg-raised)] text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--bg-raised)] hover:text-[var(--accent)]" />
         </Carousel>
         <div className="py-2 text-center font-mono-label text-[11px] text-[var(--ink-dim)]">
           <span className="text-[var(--ink)]">{current} / {count}</span> projects
