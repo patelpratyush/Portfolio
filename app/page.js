@@ -5,7 +5,6 @@ import { Skills } from "@/components/skills";
 import { FeaturedProjects } from "@/components/projects/featured-projects";
 import { MoreProjects } from "@/components/projects/more-projects";
 import { GridField } from "@/components/grid-field";
-import { BlogPreview } from "@/components/blog-preview";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
           <MoreProjects />
         </div>
       </section>
-      <BlogPreview />
       <Contact />
     </main>
   );
