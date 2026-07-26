@@ -9,7 +9,7 @@ const links = [
 export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-mono-label text-sm text-[var(--foreground)]">
           Pratyush Patel
         </Link>

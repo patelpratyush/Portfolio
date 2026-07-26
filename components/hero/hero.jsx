@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[var(--background)] px-6 py-24 sm:py-32">
       <ParticleCanvas />
-      <div className="relative mx-auto max-w-3xl">
+      <div className="relative mx-auto max-w-6xl">
         <span className="font-mono-label text-xs text-[var(--primary)]">
           Software Engineer
         </span>

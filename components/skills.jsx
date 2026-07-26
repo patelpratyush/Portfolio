@@ -11,7 +11,7 @@ const allSkills = skills.flatMap((group) =>
 export function Skills() {
   return (
     <section className="relative overflow-hidden border-y border-[var(--border)] py-20">
-      <Reveal className="mx-auto max-w-3xl px-6">
+      <Reveal className="mx-auto max-w-6xl px-6">
         <span className="font-mono-label text-xs text-[var(--primary)]">Skills</span>
         <h2 className="font-serif-display mt-3 text-3xl italic text-[var(--foreground)] text-balance sm:text-4xl">
           What I reach for.

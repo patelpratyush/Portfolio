@@ -35,7 +35,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="px-6 py-20">
-      <Reveal className="mx-auto max-w-2xl">
+      <Reveal className="mx-auto max-w-3xl">
         <span className="font-mono-label text-xs text-[var(--primary)]">Contact</span>
         <h2 className="font-serif-display mt-4 text-3xl italic text-[var(--foreground)]">
           Get in touch.

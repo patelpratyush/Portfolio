@@ -96,7 +96,7 @@ export function FeaturedProjects() {
         >
           <CarouselContent>
             {featuredProjects.map((project, i) => (
-              <CarouselItem key={project.slug} className="md:basis-1/2">
+              <CarouselItem key={project.slug} className="md:basis-1/2 xl:basis-1/3">
                 <a
                   ref={(el) => (cardRefs.current[i] = el)}
                   href={project.href}

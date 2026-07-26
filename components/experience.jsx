@@ -7,7 +7,7 @@ export async function Experience() {
   return (
     <section id="experience" className="relative overflow-hidden px-6 py-20">
       <GridField anchor="80% 20%" />
-      <div className="relative mx-auto max-w-3xl">
+      <div className="relative mx-auto max-w-6xl">
         <Reveal>
           <span className="font-mono-label text-xs text-[var(--primary)]">
             Experience

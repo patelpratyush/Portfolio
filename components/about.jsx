@@ -11,7 +11,7 @@ export function About() {
   return (
     <section className="relative overflow-hidden px-6 py-20">
       <GridField anchor="20% 30%" />
-      <Reveal className="relative mx-auto max-w-3xl">
+      <Reveal className="relative mx-auto max-w-6xl">
         <span className="font-mono-label text-xs text-[var(--primary)]">About</span>
         <h2 className="font-serif-display mt-3 text-3xl italic text-[var(--foreground)] text-balance sm:text-4xl">
           What I actually do.
