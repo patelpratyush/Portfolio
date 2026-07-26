@@ -8,9 +8,9 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--bg)]/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-mono-label text-sm text-[var(--ink)]">
+        <Link href="/" className="font-mono-label text-sm text-[var(--foreground)]">
           Pratyush Patel
         </Link>
         <ul className="flex gap-6">
@@ -18,7 +18,7 @@ export function Nav() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="font-mono-label text-xs text-[var(--ink-dim)] transition-colors hover:text-[var(--accent)]"
+                className="font-mono-label text-xs text-[var(--muted-foreground)] transition-colors hover:text-[var(--primary)]"
               >
                 {link.label}
               </Link>

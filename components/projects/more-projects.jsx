@@ -6,7 +6,7 @@ export async function MoreProjects() {
 
   return (
     <div className="mt-16">
-      <span className="font-mono-label text-xs text-[var(--ink-dim)]">
+      <span className="font-mono-label text-xs text-[var(--muted-foreground)]">
         More on GitHub
       </span>
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -16,16 +16,16 @@ export async function MoreProjects() {
             href={repo.url}
             target="_blank"
             rel="noreferrer"
-            className="rounded border border-[var(--line)] p-4 text-sm hover:border-[var(--accent)]"
+            className="rounded border border-[var(--border)] p-4 text-sm hover:border-[var(--primary)]"
           >
             <div className="flex items-center justify-between">
-              <span className="font-medium text-[var(--ink)]">{repo.name}</span>
-              <span className="font-mono-label text-[10px] tabular-nums text-[var(--ink-dim)]">
+              <span className="font-medium text-[var(--foreground)]">{repo.name}</span>
+              <span className="font-mono-label text-[10px] tabular-nums text-[var(--muted-foreground)]">
                 ★ {repo.stars}
               </span>
             </div>
             {repo.description && (
-              <p className="mt-2 text-xs leading-relaxed text-[var(--ink-dim)]">
+              <p className="mt-2 text-xs leading-relaxed text-[var(--muted-foreground)]">
                 {repo.description}
               </p>
             )}

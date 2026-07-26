@@ -42,14 +42,14 @@ export function Preloader() {
           variants={slideUp}
           initial="initial"
           exit="exit"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[var(--bg)]"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[var(--background)]"
         >
           <motion.p
             key={words[index]}
             variants={fade}
             initial="initial"
             animate="enter"
-            className="font-serif-display text-4xl italic text-[var(--ink)] sm:text-5xl"
+            className="font-serif-display text-4xl italic text-[var(--foreground)] sm:text-5xl"
           >
             {words[index]}
           </motion.p>

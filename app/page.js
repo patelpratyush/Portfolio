@@ -15,7 +15,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <section id="projects" className="relative overflow-hidden px-6 py-20">
-        <GridField />
+        <GridField anchor="15% 70%" />
         <div className="relative mx-auto max-w-3xl">
           <FeaturedProjects />
           <MoreProjects />

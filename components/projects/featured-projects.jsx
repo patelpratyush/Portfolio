@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { featuredProjects } from "@/data/projects";
 import { GridField } from "@/components/grid-field";
+import { Reveal } from "@/components/reveal";
 import {
   Carousel,
   CarouselContent,
@@ -28,9 +29,9 @@ function ProjectCover({ project }) {
   }
 
   return (
-    <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden bg-[var(--bg)]">
+    <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden bg-[var(--background)]">
       <GridField />
-      <span className="font-serif-display relative text-5xl italic text-[var(--ink-dim)] transition-colors group-hover:text-[var(--accent)]">
+      <span className="font-serif-display relative text-5xl italic text-[var(--muted-foreground)] transition-colors group-hover:text-[var(--primary)]">
         {project.title.slice(0, 1)}
       </span>
     </div>
@@ -75,14 +76,16 @@ export function FeaturedProjects() {
 
   return (
     <div>
-      <span className="font-mono-label text-xs text-[var(--accent)]">Projects</span>
-      <h2 className="font-serif-display mt-3 text-3xl italic text-[var(--ink)] text-balance sm:text-4xl">
-        Systems built to ship.
-      </h2>
-      <p className="mt-2 max-w-[50ch] text-sm text-[var(--ink-dim)]">
-        A few of the products I&apos;ve built end to end — from ML pipelines to
-        production APIs. Here are some of my favorites:
-      </p>
+      <Reveal>
+        <span className="font-mono-label text-xs text-[var(--primary)]">Projects</span>
+        <h2 className="font-serif-display mt-3 text-3xl italic text-[var(--foreground)] text-balance sm:text-4xl">
+          Systems built to ship.
+        </h2>
+        <p className="mt-2 max-w-[50ch] text-sm text-[var(--muted-foreground)]">
+          A few of the products I&apos;ve built end to end — from ML pipelines to
+          production APIs. Here are some of my favorites:
+        </p>
+      </Reveal>
 
       <div className="mt-10">
         <Carousel
@@ -99,14 +102,14 @@ export function FeaturedProjects() {
                   href={project.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="group relative block overflow-hidden rounded border border-[var(--line)] bg-[var(--bg-raised)]"
+                  className="group relative block overflow-hidden rounded border border-[var(--border)] bg-[var(--card)]"
                 >
                   <ProjectCover project={project} />
-                  <div className="relative w-full border-t border-[var(--line)] bg-[var(--bg)] p-4">
-                    <h3 className="text-sm font-semibold text-[var(--ink)]">
+                  <div className="relative w-full border-t border-[var(--border)] bg-[var(--background)] p-4">
+                    <h3 className="text-sm font-semibold text-[var(--foreground)]">
                       {project.title}
                     </h3>
-                    <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[var(--ink-dim)]">
+                    <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[var(--muted-foreground)]">
                       {project.description}
                     </p>
                   </div>
@@ -114,11 +117,11 @@ export function FeaturedProjects() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="border-[var(--line)] bg-[var(--bg-raised)] text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--bg-raised)] hover:text-[var(--accent)]" />
-          <CarouselNext className="border-[var(--line)] bg-[var(--bg-raised)] text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--bg-raised)] hover:text-[var(--accent)]" />
+          <CarouselPrevious className="border-[var(--border)] bg-[var(--card)] text-[var(--foreground)] hover:border-[var(--primary)] hover:bg-[var(--card)] hover:text-[var(--primary)]" />
+          <CarouselNext className="border-[var(--border)] bg-[var(--card)] text-[var(--foreground)] hover:border-[var(--primary)] hover:bg-[var(--card)] hover:text-[var(--primary)]" />
         </Carousel>
-        <div className="py-2 text-center font-mono-label text-[11px] text-[var(--ink-dim)]">
-          <span className="text-[var(--ink)]">{current} / {count}</span> projects
+        <div className="py-2 text-center font-mono-label text-[11px] text-[var(--muted-foreground)]">
+          <span className="text-[var(--foreground)]">{current} / {count}</span> projects
         </div>
       </div>
     </div>
